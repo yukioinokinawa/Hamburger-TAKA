@@ -1,17 +1,40 @@
 $title-color: #707070;
 $jtitle-color: #3C2A10;
 
-/*Desk-top*/
-@media screen  {
-    
+/*_bace.scss*/
+html {
+	font-size: 62.5%;
+	line-height: 0;
+	height: 100%;
+	scroll-behavior: smooth;
 }
 
-/*iPad*/
-@media screen and (max-width:834px) {
-    
+body {
+	color: #707070;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Noto Sans JP", "MyYuGothicM, YuGothic", "-apple-system", BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif, M+PLUS+1p;
+	min-width: 350px;
+	width: 100%;
+	overflow-x: hidden;
+    margin: 0;
+	padding: 0;
 }
 
-/*iPhone*/
-@media screen and (max-width:375px) {
-    
+img {
+	vertical-align: middle;
+	border-style: none;
 }
+
+a {
+	color			: #131D34;
+	display			: block;
+	text-decoration	: none;
+	transition		: 0.4s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+//参照　https://zenn.dev/yurukei20/books/10e7322a762178/viewer/c5c998

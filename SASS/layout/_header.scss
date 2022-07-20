@@ -1,0 +1,25 @@
+
+//Header//
+
+    .l-header {
+        @media screen and (max-width:375px){
+            width: 100%;
+            background-color: blue;
+            flex-direction: column;
+            height: 217px;
+            display: inline-block;
+            
+    
+        > p {
+            font-family : Roboto;
+            font-size   : 4em;
+            font-weight : bold;
+            color : #707070;
+            margin: 1em 2em;
+        }
+
+        __search {
+            height: 4em;
+        }
+    }
+    }    
