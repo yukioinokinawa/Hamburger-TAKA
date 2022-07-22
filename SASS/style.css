@@ -33,24 +33,58 @@ a:hover {
   text-decoration: none;
 }
 
+header {
+  height: 217px;
+  background-color: #FFF7EF;
+  width: 100%;
+  text-align: center;
+}
 @media screen and (max-width: 375px) {
-  .l-header {
-    width: 100%;
-    background-color: blue;
+  header .l-header {
+    max-width: 375px;
+    text-align: center;
     flex-direction: column;
-    height: 217px;
     display: inline-block;
+    margin: 40px auto;
   }
-  .l-header > p {
+  header .l-header > p {
     font-family: Roboto;
     font-size: 4em;
     font-weight: bold;
     color: #707070;
-    margin: 1em 2em;
   }
-  .l-header __search {
+  header .l-header__search {
     height: 4em;
+    width: 320px;
   }
+  header .l-header__search > input {
+    align-items: center;
+    height: 100%;
+    border: #707070;
+  }
+  header .l-header__search .banner {
+    width: 192px;
+    border-radius: 10px;
+  }
+  header .l-header__search .btn {
+    width: 64px;
+    border-radius: 10px;
+    margin-left: 1em;
+  }
+}
+
+.c-tophead {
+  height: 230px;
+  background-image: url(/images/tophead.png) cover center center;
+}
+.c-tophead__wrapper {
+  height: 100%;
+  display: block;
+}
+.c-tophead__wrapper > p {
+  font-size: 3.6em;
+  font-family: "M+1";
+  font-weight: bold;
 }
 
 /**Foundation*/

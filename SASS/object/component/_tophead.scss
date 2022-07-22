@@ -1,0 +1,19 @@
+
+//Tophead
+
+.c-tophead {
+    height: 230px;
+    background-image: url(/images/tophead.png) cover center center;
+
+
+    &__wrapper {
+        height: 100%;
+        display: block;
+
+        > p {
+            font-size: 3.6em;
+            font-family: "M+1";
+            font-weight: bold;
+        }
+    }
+}
