@@ -20,25 +20,34 @@ header{
             font-size   : 4em;
             font-weight : bold;
             color : #707070;
+            margin: 1em 2em;
         }
 
         &__search {
             height: 4em;
             width: 320px;
+            margin-left: 20px;
 
             > input {
                 align-items: center;
-                height: 100%;
-                border: #707070;
+                height: 3em;
+                border: 1px solid;
+                border-color: #707070;  
+                font-family: "M+1";
+                font-size: 150%;
+                color: #707070;
+
             }
             .banner{
-                width: calc(320px/5)*3;
+                width: calc(320px/5)*3.5;
                 border-radius: 10px;
+                background-color: #FFFfff;
             }
            .btn{
             width: calc(320px/5)*1;
             border-radius: 10px;
             margin-left: 1em;
+            background-color: #F2EDE9;
             }
 
         }

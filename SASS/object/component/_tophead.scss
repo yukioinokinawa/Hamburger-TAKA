@@ -3,7 +3,9 @@
 
 .c-tophead {
     height: 230px;
-    background-image: url(/images/tophead.png) cover center center;
+    background-image: url("/images/tophead.png");
+    background-size: cover;
+    background-attachment: fixed;
 
 
     &__wrapper {
@@ -11,6 +13,11 @@
         display: block;
 
         > p {
+            color: #fff;
+            position: relative;
+            margin: 0;
+            top: 50px;
+            text-align: center;
             font-size: 3.6em;
             font-family: "M+1";
             font-weight: bold;

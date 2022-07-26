@@ -52,36 +52,51 @@ header {
     font-size: 4em;
     font-weight: bold;
     color: #707070;
+    margin: 1em 2em;
   }
   header .l-header__search {
     height: 4em;
     width: 320px;
+    margin-left: 20px;
   }
   header .l-header__search > input {
     align-items: center;
-    height: 100%;
-    border: #707070;
+    height: 3em;
+    border: 1px solid;
+    border-color: #707070;
+    font-family: "M+1";
+    font-size: 150%;
+    color: #707070;
   }
   header .l-header__search .banner {
-    width: 192px;
+    width: 224px;
     border-radius: 10px;
+    background-color: #FFFfff;
   }
   header .l-header__search .btn {
     width: 64px;
     border-radius: 10px;
     margin-left: 1em;
+    background-color: #F2EDE9;
   }
 }
 
 .c-tophead {
   height: 230px;
-  background-image: url(/images/tophead.png) cover center center;
+  background-image: url("/images/tophead.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .c-tophead__wrapper {
   height: 100%;
   display: block;
 }
 .c-tophead__wrapper > p {
+  color: #fff;
+  position: relative;
+  margin: 0;
+  top: 50px;
+  text-align: center;
   font-size: 3.6em;
   font-family: "M+1";
   font-weight: bold;
