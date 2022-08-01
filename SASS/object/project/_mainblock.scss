@@ -1,5 +1,4 @@
-
-.p-mainblock__wrapper{    
+.p-mainblock__wrapper {
     @media screen and (min-width:765px) {
         display: flex;
     }
@@ -12,34 +11,38 @@
     padding: 0 10px;
     background-size: cover;
     background-position: center center;
-    display: grid;
-    grid-template-columns: minmax(300px,1fr);
-    gap: 10px;
-    word-break: break-all;
 
-
-    > h1 {
+    >h1 {
         padding-top: 5rem;
         font-size: 41px;
         font-weight: bold;
         color: #ffffff;
-    }  
+    }
+
+    &__a-wrapper {
+        height: 85%;
+        display: grid;
+        align-content: end;
+        gap: 10px;
+        word-break: break-all;
+    }
 }
 
-
 article {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     height: 120px;
 
     h2 {
         font-size: 22px;
         font-weight: bold;
         color: #3C2A10;
+        padding: 5px;
     }
 
     p {
         font-size: 16px;
         font-weight: normal;
-        color:#3C2A10;
+        color: #3C2A10;
+        padding: 5px;
     }
 }
