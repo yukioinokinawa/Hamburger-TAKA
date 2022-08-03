@@ -1,6 +1,33 @@
 /**Map*/
 
 .c-map {
-    height: 690px;
+    height: 69rem;
     background-color: #000000;
+    background-image: url("/images/map.png");
+    background-size: cover;
+
+    &__shade {
+        height: 300px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__textarea {
+        padding: 4rem;
+        font-family: "M+1";
+        color: #FFFFFF;
+        line-height: 3rem;
+        overflow-wrap: anywhere;
+
+        >h1 {
+            font-size: 3rem;
+        }
+
+        >p {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+            word-break: break-all;
+        }
+    }
+
 }
