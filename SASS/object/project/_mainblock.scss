@@ -17,6 +17,18 @@
         font-size: 41px;
         font-weight: bold;
         color: #ffffff;
+        position: relative;
+    }
+
+    >h1::after {
+        content: '';
+        width: 5rem;
+        height: 4px;
+        display: inline-block;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -5rem;
+        left: 0;
     }
 
     &__a-wrapper {
