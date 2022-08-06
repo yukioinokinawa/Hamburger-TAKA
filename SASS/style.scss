@@ -8,6 +8,7 @@
 @use "./layout/header";
 @use "./layout/main";
 @use "./layout/sidebar";
+@use "./layout/nav";
 
 
 /**Object*/
@@ -16,6 +17,7 @@
 @use "./object/component/map";
 @use "./object/component/tophead";
 @use "./object/component/backimg";
+@use "./object/component/button";
 
 
 /**Project*/

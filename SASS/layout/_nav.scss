@@ -1,1 +1,25 @@
 /**Nav*/
+
+.l-nav {
+    min-width: 30rem;
+    height: auto;
+    background-color: #F2EDE9;
+    color: #707070;
+    font-family: "M+1";
+    padding-top: 3rem;
+
+    ul {
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-left: 3rem;
+        margin: 2.5rem 0;
+    }
+
+    li {
+        list-style: none;
+        font-size: 2rem;
+        font-weight: normal;
+        padding-left: 4rem;
+        margin: 1.5rem 0;
+    }
+}

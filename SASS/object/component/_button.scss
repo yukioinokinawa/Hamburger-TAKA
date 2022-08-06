@@ -1,0 +1,15 @@
+/*Menu**/
+
+.c-button {
+    position: relative;
+
+    >span {
+        font-family: "Robot";
+        font-size: 2rem;
+        color: #707070;
+        font-weight: bold;
+        position: absolute;
+        top: 3rem;
+        left: 30rem;
+    }
+}
