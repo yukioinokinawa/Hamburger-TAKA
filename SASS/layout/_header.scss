@@ -6,65 +6,120 @@ header {
     text-align: center;
 
     .l-header {
-        @media screen and (max-width:375px) {
-            max-width: 375px;
-            text-align: center;
-            flex-direction: column;
-            display: inline-block;
-            margin: 40px auto;
+        max-width: 375px;
+        text-align: center;
+        flex-direction: column;
+        display: inline-block;
+        margin: 40px auto;
 
+        >p {
+            font-family: "Roboto";
+            font-size: 4rem;
+            font-weight: bold;
+            color: #707070;
+            margin: 1rem 2rem;
+        }
+
+        &__search {
+            height: 4rem;
+            width: 320px;
+            margin-left: 20px;
+            display: inline-block;
+            position: relative;
+
+
+            >input {
+                align-items: center;
+                height: 4rem;
+                border: 1px solid;
+                border-color: #707070;
+                font-family: "M+1";
+                font-size: 150%;
+                color: #707070;
+            }
+
+
+            .banner {
+                border-radius: 10px;
+                background-color: #FFFfff;
+            }
+
+            .btn {
+                width: calc(320px/5)*1;
+                border-radius: 10px;
+                margin-left: 1rem;
+                background-color: #F2EDE9;
+            }
+        }
+
+        &__search::before {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background: url("/images/glass.png") no-repeat center center;
+            display: inline-block;
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+        }
+
+
+        @media screen and(min-width:960px) {
+            height: 217px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: inherit;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
 
             >p {
-                font-family: Roboto;
-                font-size: 4em;
-                font-weight: bold;
-                color: #707070;
-                margin: 1em 2em;
+                font-size: 6rem;
+                margin-left: 4rem;
             }
 
             &__search {
-                height: 4em;
-                width: 320px;
+                width: 50rem;
+                height: 4rem;
                 margin-left: 20px;
                 display: inline-block;
                 position: relative;
 
                 >input {
                     align-items: center;
-                    height: 3em;
+                    height: 4rem;
                     border: 1px solid;
                     border-color: #707070;
                     font-family: "M+1";
                     font-size: 150%;
                     color: #707070;
-
                 }
 
                 .banner {
-                    width: calc(320px/5)*3.5;
+                    width: calc(50rem/5)*3;
                     border-radius: 10px;
                     background-color: #FFFfff;
                 }
 
                 .btn {
-                    width: calc(320px/5)*1;
+                    width: calc(50rem/5)*1;
                     border-radius: 10px;
-                    margin-left: 1em;
+                    margin-left: 1rem;
                     background-color: #F2EDE9;
                 }
-
             }
 
             &__search::before {
                 content: "";
                 width: 3rem;
                 height: 3rem;
+                max-width: 100%;
                 background: url("/images/glass.png") no-repeat center center;
                 display: inline-block;
                 position: absolute;
-                top: 1rem;
-                left: 2rem;
+                left: 5rem;
             }
         }
     }
+
 }

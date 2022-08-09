@@ -23,10 +23,22 @@
 
             >h1 {
                 font-size: 3rem;
+                position: relative;
+            }
+
+            >h1::after {
+                content: '';
+                width: 6rem;
+                height: 2px;
+                display: inline-block;
+                background-color: #FFFFFF;
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
             }
 
             >p {
-                padding-top: 1rem;
+                padding-top: 5rem;
                 font-size: 1.4rem;
                 word-break: break-all;
             }
@@ -42,8 +54,28 @@
             background-color: rgba(0, 0, 0, 0.6);
         }
 
+
     }
 
+    @media screen and(min-width:600px) {
+        min-height: 40rem;
 
+        &__wrapper {
+            min-height: 40rem;
 
+            .c-map__shade {
+                height: 100%;
+            }
+        }
+
+    }
+
+    @media screen and(min-width:960px) {
+        min-height: 65rem;
+
+        &__wrapper {
+            max-width: 50rem;
+            height: 100%;
+        }
+    }
 }

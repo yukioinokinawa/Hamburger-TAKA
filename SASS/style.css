@@ -40,6 +40,10 @@ h1 {
   color: #FFFFFF;
 }
 
+.f-bace__container {
+  display: flex;
+}
+
 /**Footer*/
 footer {
   height: 150px;
@@ -52,13 +56,12 @@ footer > p {
   font-family: "M+1";
   font-size: 20px;
   font-weight: normal;
-  padding-top: 30px;
+  padding: 3rem 0;
 }
 footer > small {
   font-family: "M+1";
   font-size: 14px;
   font-weight: normal;
-  margin-top: 30px;
 }
 
 header {
@@ -67,31 +70,80 @@ header {
   width: 100%;
   text-align: center;
 }
-@media screen and (max-width: 375px) {
+header .l-header {
+  max-width: 375px;
+  text-align: center;
+  flex-direction: column;
+  display: inline-block;
+  margin: 40px auto;
+}
+header .l-header > p {
+  font-family: "Roboto";
+  font-size: 4rem;
+  font-weight: bold;
+  color: #707070;
+  margin: 1rem 2rem;
+}
+header .l-header__search {
+  height: 4rem;
+  width: 320px;
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+}
+header .l-header__search > input {
+  align-items: center;
+  height: 4rem;
+  border: 1px solid;
+  border-color: #707070;
+  font-family: "M+1";
+  font-size: 150%;
+  color: #707070;
+}
+header .l-header__search .banner {
+  border-radius: 10px;
+  background-color: #FFFfff;
+}
+header .l-header__search .btn {
+  width: 64px;
+  border-radius: 10px;
+  margin-left: 1rem;
+  background-color: #F2EDE9;
+}
+header .l-header__search::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: url("/images/glass.png") no-repeat center center;
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+@media screen and (min-width: 960px) {
   header .l-header {
-    max-width: 375px;
-    text-align: center;
-    flex-direction: column;
-    display: inline-block;
-    margin: 40px auto;
+    height: 217px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
   }
   header .l-header > p {
-    font-family: Roboto;
-    font-size: 4em;
-    font-weight: bold;
-    color: #707070;
-    margin: 1em 2em;
+    font-size: 6rem;
+    margin-left: 4rem;
   }
   header .l-header__search {
-    height: 4em;
-    width: 320px;
+    width: 50rem;
+    height: 4rem;
     margin-left: 20px;
     display: inline-block;
     position: relative;
   }
   header .l-header__search > input {
     align-items: center;
-    height: 3em;
+    height: 4rem;
     border: 1px solid;
     border-color: #707070;
     font-family: "M+1";
@@ -99,31 +151,37 @@ header {
     color: #707070;
   }
   header .l-header__search .banner {
-    width: 224px;
+    width: 30rem;
     border-radius: 10px;
     background-color: #FFFfff;
   }
   header .l-header__search .btn {
-    width: 64px;
+    width: 10rem;
     border-radius: 10px;
-    margin-left: 1em;
+    margin-left: 1rem;
     background-color: #F2EDE9;
   }
   header .l-header__search::before {
     content: "";
     width: 3rem;
     height: 3rem;
+    max-width: 100%;
     background: url("/images/glass.png") no-repeat center center;
     display: inline-block;
     position: absolute;
-    top: 1rem;
-    left: 2rem;
+    left: 5rem;
   }
 }
 
 /**Main*/
 .l-sidebar {
   background-color: #F2EDE9;
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .l-sidebar {
+    display: inherit;
+  }
 }
 
 /**Nav*/
@@ -173,9 +231,20 @@ header {
 }
 .c-map__wrapper .c-map__textarea > h1 {
   font-size: 3rem;
+  position: relative;
+}
+.c-map__wrapper .c-map__textarea > h1::after {
+  content: "";
+  width: 6rem;
+  height: 2px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
 }
 .c-map__wrapper .c-map__textarea > p {
-  padding-top: 1rem;
+  padding-top: 5rem;
   font-size: 1.4rem;
   word-break: break-all;
 }
@@ -187,6 +256,26 @@ header {
   height: 300px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (min-width: 600px) {
+  .c-map {
+    min-height: 40rem;
+  }
+  .c-map__wrapper {
+    min-height: 40rem;
+  }
+  .c-map__wrapper .c-map__shade {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .c-map {
+    min-height: 65rem;
+  }
+  .c-map__wrapper {
+    max-width: 50rem;
+    height: 100%;
+  }
 }
 
 .c-tophead {
@@ -209,6 +298,25 @@ header {
   font-size: 3.6em;
   font-family: "M+1";
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .c-tophead {
+    height: 280px;
+  }
+  .c-tophead__wrapper {
+    height: 280px;
+  }
+  .c-tophead__wrapper p {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .c-tophead {
+    height: 50rem;
+  }
+  .c-tophead__wrapper > p {
+    text-align: inherit;
+  }
 }
 
 .c-backimg1 {
@@ -274,7 +382,7 @@ header {
 }
 .p-mainblock__a-wrapper article {
   background-color: rgba(255, 255, 255, 0.7);
-  height: 120px;
+  min-height: 120px;
 }
 .p-mainblock__a-wrapper article h2 {
   font-size: 2.2rem;
@@ -287,6 +395,11 @@ header {
   font-weight: normal;
   color: #3C2A10;
   padding: 5px;
+}
+@media screen and (min-width: 600px) {
+  .p-mainblock {
+    flex: 1;
+  }
 }
 
 /**Foundation*/
