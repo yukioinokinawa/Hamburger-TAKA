@@ -21,6 +21,11 @@
     <div class="f-bace__container">
         <div class="l-main">
             <header>
+                <button class="c-button">
+                    <p>Menu</p>
+                    <span></span>
+                </button>
+
                 <div class="l-header">
                     <p>Hamburger</p>
                     <form class="l-header__search">
@@ -83,41 +88,45 @@
             <!--Map-->
         </div>
         <div class="l-sidebar">
-            <button class="c-button">
-                <span>Menu</span>
-            </button>
             <!--Nav-->
-            <nav class="l-nav">
-                <ul>
-                    <p>バーガー</p>
-                    <ul>
-                        <li>ハンバーガー</li>
-                        <li>チーズバーガー</li>
-                        <li>テリヤキバーガー</li>
-                        <li>アボガドバーガー</li>
-                        <li>フィッシュバーガー</li>
-                        <li>ベーコンバーガー</li>
-                        <li>チキンバーガー</li>
-                    </ul>
-                    <p>サイド</p>
-                    <ul>
-                        <li>ポテト</li>
-                        <li>サラダ</li>
-                        <li>ナゲット</li>
-                        <li>コーン</li>
-                    </ul>
-                    <p>ドリンク</p>
-                    <ul>
-                        <li>コーラ</li>
-                        <li>ファンタ</li>
-                        <li>オレンジ</li>
-                        <li>アップル</li>
-                        <li>紅茶　（Ice/Hot）</li>
-                        <li>コーヒー（Ice/Hot）</li>
-                    </ul>
+            <div class="l-nav">
+                <nav class="l-nav__body">
+                    <button class="c-button">
+                        <img src="/images/peke.png" alt="closeボタン">
+                        <span></span>
+                    </button>
 
-                </ul>
-            </nav>
+                    <ul>
+                        <p>バーガー</p>
+                        <ul>
+                            <li>ハンバーガー</li>
+                            <li>チーズバーガー</li>
+                            <li>テリヤキバーガー</li>
+                            <li>アボガドバーガー</li>
+                            <li>フィッシュバーガー</li>
+                            <li>ベーコンバーガー</li>
+                            <li>チキンバーガー</li>
+                        </ul>
+                        <p>サイド</p>
+                        <ul>
+                            <li>ポテト</li>
+                            <li>サラダ</li>
+                            <li>ナゲット</li>
+                            <li>コーン</li>
+                        </ul>
+                        <p>ドリンク</p>
+                        <ul>
+                            <li>コーラ</li>
+                            <li>ファンタ</li>
+                            <li>オレンジ</li>
+                            <li>アップル</li>
+                            <li>紅茶　（Ice/Hot）</li>
+                            <li>コーヒー（Ice/Hot）</li>
+                        </ul>
+
+                    </ul>
+                </nav>
+            </div>
             <!--Nav-->
         </div>
     </div>
@@ -126,6 +135,9 @@
         <small>Copyright: Raise Tech</small>
     </footer>
     <!--footer-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>

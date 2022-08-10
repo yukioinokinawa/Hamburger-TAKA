@@ -1,15 +1,18 @@
 /*Menu**/
 
 .c-button {
-    position: relative;
+    display: block;
+    margin-left: auto;
+    padding: 1rem;
 
-    >span {
+    >p {
         font-family: "Robot";
         font-size: 2rem;
         color: #707070;
         font-weight: bold;
-        position: absolute;
-        top: 3rem;
-        left: 30rem;
+    }
+
+    @media screen and(min-width:960px) {
+        display: none;
     }
 }

@@ -69,25 +69,25 @@ header {
   background-color: #FFF7EF;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 header .l-header {
-  max-width: 375px;
+  min-width: 375px;
   text-align: center;
   flex-direction: column;
   display: inline-block;
-  margin: 40px auto;
 }
 header .l-header > p {
   font-family: "Roboto";
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #707070;
-  margin: 1rem 2rem;
+  margin: 2rem;
 }
 header .l-header__search {
   height: 4rem;
-  width: 320px;
-  margin-left: 20px;
+  width: 40rem;
+  margin: 3rem;
   display: inline-block;
   position: relative;
 }
@@ -101,11 +101,13 @@ header .l-header__search > input {
   color: #707070;
 }
 header .l-header__search .banner {
+  width: 24rem;
   border-radius: 10px;
   background-color: #FFFfff;
+  padding-left: 5rem;
 }
 header .l-header__search .btn {
-  width: 64px;
+  width: 8rem;
   border-radius: 10px;
   margin-left: 1rem;
   background-color: #F2EDE9;
@@ -114,11 +116,11 @@ header .l-header__search::before {
   content: "";
   width: 3rem;
   height: 3rem;
-  background: url("/images/glass.png") no-repeat center center;
+  background: url("/images/glass.png") no-repeat center center/auto 100%;
   display: inline-block;
   position: absolute;
-  top: 1rem;
-  left: 2rem;
+  top: 5px;
+  left: 4rem;
 }
 @media screen and (min-width: 960px) {
   header .l-header {
@@ -174,37 +176,63 @@ header .l-header__search::before {
 }
 
 /**Main*/
+@media screen and (min-width: 960px) {
+  .l-main {
+    position: relative;
+  }
+}
+
 .l-sidebar {
   background-color: #F2EDE9;
-  display: none;
-}
-@media screen and (min-width: 960px) {
-  .l-sidebar {
-    display: inherit;
-  }
 }
 
 /**Nav*/
 .l-nav {
-  min-width: 30rem;
+  transition: all 300ms 0s ease;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+.l-nav__body {
+  width: 36rem;
   height: auto;
   background-color: #F2EDE9;
   color: #707070;
   font-family: "M+1";
   padding-top: 3rem;
+  overflow-y: auto;
 }
-.l-nav ul {
+.l-nav__body ul {
   font-size: 2.4rem;
   font-weight: bold;
   padding-left: 3rem;
   margin: 2.5rem 0;
 }
-.l-nav li {
+.l-nav__body li {
   list-style: none;
   font-size: 2rem;
   font-weight: normal;
   padding-left: 4rem;
   margin: 1.5rem 0;
+}
+@media screen and (min-width: 960px) {
+  .l-nav {
+    width: inherit;
+    height: inherit;
+    position: static;
+    background: inherit;
+  }
+  .l-nav__body {
+    display: block;
+  }
+}
+.l-nav.is-open {
+  left: 0;
 }
 
 /**Map*/
@@ -253,11 +281,11 @@ header .l-header__search::before {
   top: 0;
   left: 0;
   z-index: 1;
-  height: 300px;
+  height: 500px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 560px) {
   .c-map {
     min-height: 40rem;
   }
@@ -274,7 +302,7 @@ header .l-header__search::before {
   }
   .c-map__wrapper {
     max-width: 50rem;
-    height: 100%;
+    min-height: 65rem;
   }
 }
 
@@ -295,11 +323,11 @@ header .l-header__search::before {
   position: relative;
   margin: 0;
   top: 50px;
-  font-size: 3.6em;
+  font-size: 3.6rem;
   font-family: "M+1";
   font-weight: bold;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 560px) {
   .c-tophead {
     height: 280px;
   }
@@ -316,6 +344,7 @@ header .l-header__search::before {
   }
   .c-tophead__wrapper > p {
     text-align: inherit;
+    display: inherit;
   }
 }
 
@@ -329,16 +358,20 @@ header .l-header__search::before {
 
 /*Menu**/
 .c-button {
-  position: relative;
+  display: block;
+  margin-left: auto;
+  padding: 1rem;
 }
-.c-button > span {
+.c-button > p {
   font-family: "Robot";
   font-size: 2rem;
   color: #707070;
   font-weight: bold;
-  position: absolute;
-  top: 3rem;
-  left: 30rem;
+}
+@media screen and (min-width: 960px) {
+  .c-button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 765px) {
