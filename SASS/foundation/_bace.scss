@@ -1,6 +1,12 @@
 $title-color: #707070;
 $jtitle-color: #3C2A10;
 
+/*
+ブレークポイント
+PC 960px〜
+タブレット　560px〜
+**/
+
 /*_bace.scss*/
 html {
 	font-size: 62.5%;
@@ -48,5 +54,19 @@ h1 {
 	display: flex;
 }
 
+#shadow {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(0, 0, 0, 0.8);
+	z-index: 5;
+	display: none;
+
+	&.go {
+		display: inherit;
+	}
+}
 
 //参照　https://zenn.dev/yurukei20/books/10e7322a762178/viewer/c5c998
