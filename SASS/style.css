@@ -56,7 +56,7 @@ h1 {
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
   display: none;
 }
@@ -233,13 +233,14 @@ header .l-header__search::before {
   }
   header .l-header__search::before {
     content: "";
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     max-width: 100%;
     background: url("/images/glass.png") no-repeat center center;
     display: inline-block;
     position: absolute;
     left: 5rem;
+    top: auto;
   }
 }
 
@@ -351,7 +352,7 @@ header .l-header__search::before {
   z-index: 1;
   height: 400px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 560px) {
   .c-map {
@@ -371,6 +372,19 @@ header .l-header__search::before {
   .c-map__wrapper {
     max-width: 50rem;
     min-height: 65rem;
+  }
+  .c-map__wrapper .c-map__textarea > h1::after {
+    content: "";
+    width: 6rem;
+    height: 2px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+  }
+  .c-map__wrapper .c-map__textarea > p {
+    padding-top: 10rem;
   }
 }
 

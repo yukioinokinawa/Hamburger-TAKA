@@ -51,7 +51,7 @@
             z-index: 1;
             height: 400px;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.3);
         }
 
 
@@ -76,6 +76,24 @@
         &__wrapper {
             max-width: 50rem;
             min-height: 65rem;
+
+            .c-map__textarea {
+
+                >h1::after {
+                    content: '';
+                    width: 6rem;
+                    height: 2px;
+                    display: inline-block;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    bottom: -5rem;
+                    left: 0;
+                }
+
+                >p {
+                    padding-top: 10rem;
+                }
+            }
         }
     }
 }
