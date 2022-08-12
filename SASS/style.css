@@ -267,6 +267,9 @@ header .l-header__search::before {
   justify-content: flex-end;
   z-index: 10;
 }
+.l-nav > p {
+  display: none;
+}
 .l-nav__body {
   width: 36rem;
   height: auto;
@@ -295,9 +298,27 @@ header .l-header__search::before {
     height: inherit;
     position: static;
     background: inherit;
+    display: contents;
+  }
+  .l-nav > p {
+    display: block;
+    height: 217px;
+    width: 36rem;
+    font-size: 3.4rem;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding-left: 3rem;
+    padding-top: 10rem;
   }
   .l-nav__body {
     display: block;
+    padding-top: 0;
+  }
+  .l-nav__body ul {
+    margin: 0;
+  }
+  .l-nav__body ul > ul {
+    margin: 2.5rem 0;
   }
 }
 .l-nav.is-open {
@@ -460,7 +481,11 @@ header .l-header__search::before {
 }
 @media screen and (min-width: 960px) {
   .c-button {
+    pointer-events: none;
     display: none;
+  }
+  .c-button > p {
+    font-size: 3.4;
   }
 }
 

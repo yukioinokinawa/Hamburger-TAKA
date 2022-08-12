@@ -11,6 +11,10 @@
     justify-content: flex-end;
     z-index: 10;
 
+    >p {
+        display: none;
+    }
+
     &__body {
         width: 36rem;
         height: auto;
@@ -43,9 +47,30 @@
         height: inherit;
         position: static;
         background: inherit;
+        display: contents;
+
+        >p {
+            display: block;
+            height: 217px;
+            width: 36rem;
+            font-size: 3.4rem;
+            font-family: "Roboto";
+            font-weight: bold;
+            padding-left: 3rem;
+            padding-top: 10rem;
+        }
 
         &__body {
             display: block;
+            padding-top: 0;
+
+            ul {
+                margin: 0;
+
+                >ul {
+                    margin: 2.5rem 0;
+                }
+            }
         }
     }
 

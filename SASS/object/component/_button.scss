@@ -13,6 +13,11 @@
     }
 
     @media screen and(min-width:960px) {
+        pointer-events: none;
         display: none;
+
+        >p {
+            font-size: 3.4;
+        }
     }
 }
