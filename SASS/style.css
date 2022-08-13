@@ -411,7 +411,7 @@ header .l-header__search::before {
 
 .c-tophead {
   height: 230px;
-  background-image: url("/images/tophead.png");
+  background-image: url("/images/tophead_full.png");
   background-size: cover;
   background-attachment: scroll;
 }
