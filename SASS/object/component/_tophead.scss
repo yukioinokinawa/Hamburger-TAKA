@@ -22,6 +22,16 @@
             font-family: "M+1";
             font-weight: bold;
         }
+
+        .lower-p {
+            line-height: 3rem;
+            padding-top: 100px;
+
+            >small {
+                font-size: 1.6rem;
+            }
+        }
+
     }
 
     @media screen and(min-width:560px) {

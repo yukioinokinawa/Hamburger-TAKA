@@ -18,11 +18,14 @@
 @use "./object/component/tophead";
 @use "./object/component/backimg";
 @use "./object/component/button";
+@use "./object/component/card";
 
 
 /**Project*/
 @use "./object/project/mainblock";
+@use "./object/project/archive";
 
 
 /**Utility*/
 @use "./object/utility/search";
+@use "./object/utility/pagenation";

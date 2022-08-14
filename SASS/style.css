@@ -430,6 +430,13 @@ header .l-header__search::before {
   font-family: "M+1";
   font-weight: bold;
 }
+.c-tophead__wrapper .lower-p {
+  line-height: 3rem;
+  padding-top: 100px;
+}
+.c-tophead__wrapper .lower-p > small {
+  font-size: 1.6rem;
+}
 @media screen and (min-width: 560px) {
   .c-tophead {
     height: 280px;
@@ -487,6 +494,45 @@ header .l-header__search::before {
   .c-button > p {
     font-size: 3.4;
   }
+}
+
+/*Card**/
+.c-card {
+  min-width: 33rem;
+  height: auto;
+  margin: 2rem;
+}
+.c-card > img {
+  width: 100%;
+}
+.c-card__inner {
+  background-color: #3C2B1C;
+  color: #fff;
+  font-family: "M+1";
+  font-weight: bold;
+  padding-left: 1.7rem;
+}
+.c-card__inner > h2 {
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+.c-card__inner > h3 {
+  font-size: 1.6rem;
+  padding-top: 2.5rem;
+}
+.c-card__inner > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 7rem 0 0;
+}
+.c-card__inner > button {
+  width: 16.5rem;
+  height: 4.5rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 4rem 7rem;
+  font-size: 1.6rem;
+  color: #707070;
 }
 
 @media screen and (min-width: 765px) {
@@ -548,6 +594,30 @@ header .l-header__search::before {
   .p-mainblock {
     flex: 1;
   }
+}
+
+/*Archive main area**/
+.p-archive {
+  background-color: #FFF;
+}
+.p-archive__intro > h1 {
+  color: #3C2A10;
+  font-size: 2.8rem;
+  font-family: "M+1";
+  font-weight: bold;
+  padding: 3rem 0 3rem 2rem;
+}
+.p-archive__intro > p {
+  margin: 0 2rem;
+}
+
+/*Pagenation**/
+.u-pagenation {
+  width: 100%;
+  height: 2rem;
+}
+.u-pagenation > link {
+  font-size: 2rem;
 }
 
 /**Foundation*/
