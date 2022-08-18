@@ -15,7 +15,6 @@
 
 /**Component*/
 @use "./object/component/map";
-@use "./object/component/tophead";
 @use "./object/component/backimg";
 @use "./object/component/button";
 @use "./object/component/card";
@@ -24,6 +23,9 @@
 /**Project*/
 @use "./object/project/mainblock";
 @use "./object/project/archive";
+@use "./object/project/maintop";
+@use "./object/project/archivetop";
+@use "./object/project/pagetop";
 
 
 /**Utility*/
