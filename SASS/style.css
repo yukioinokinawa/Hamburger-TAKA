@@ -418,23 +418,23 @@ header .l-header__search::before {
 }
 
 /*Menu**/
-.c-button {
+.c-menubutton {
   display: block;
   margin-left: auto;
   padding: 1rem;
 }
-.c-button > p {
+.c-menubutton > p {
   font-family: "Robot";
   font-size: 2rem;
   color: #707070;
   font-weight: bold;
 }
 @media screen and (min-width: 960px) {
-  .c-button {
+  .c-menubutton {
     pointer-events: none;
     display: none;
   }
-  .c-button > p {
+  .c-menubutton > p {
     font-size: 3.4;
   }
 }
@@ -526,6 +526,84 @@ header .l-header__search::before {
     width: 29rem;
     height: 7.6rem;
     border-radius: 10rem;
+  }
+}
+
+/*img-container**/
+.c-imgcontainer {
+  min-width: 33rem;
+  margin-top: 6rem;
+}
+.c-imgcontainer > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-imgcontainer__wrapper {
+  min-width: 33rem;
+  display: flex;
+  align-items: flex-start;
+}
+.c-imgcontainer__wrapper .c-imgcontainer__imgbox > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.c-imgcontainer__wrapper .c-imgcontainer__inner {
+  color: #3C2A10;
+  font-family: "M+1";
+  font-weight: bold;
+  padding-left: 1.7rem;
+}
+.c-imgcontainer__wrapper .c-imgcontainer__inner > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.c-imgcontainer .reverse {
+  flex-direction: row-reverse;
+}
+.c-imgcontainer__imgcenter {
+  margin: 3rem auto;
+}
+.c-imgcontainer__imgcenter > img {
+  max-width: 26rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.c-imgcontainer__imglist {
+  min-width: 33rem;
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.c-imgcontainer__imglist > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media screen and (min-width: 560px) {
+  .c-imgcontainer__imgcenter {
+    margin: 6rem auto;
+  }
+  .c-imgcontainer__imgcenter > img {
+    max-width: 58rem;
+    height: 100%;
+  }
+  .c-imgcontainer__imglist {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 960px) {
+  .c-imgcontainer__imglist {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -695,71 +773,127 @@ header .l-header__search::before {
   font-size: 1.6rem;
 }
 
-.c-tophead {
-  height: 230px;
+.p-pagetop {
+  height: 220px;
 }
-.c-tophead .frontimg {
-  background-image: url("/images/tophead_full.png");
+.p-pagetop .singleimg {
+  background-image: url("/images/cheeseburger.png");
   background-size: cover;
   background-attachment: scroll;
 }
-.c-tophead .archiveimg {
-  background-image: url("/images/takeout.png");
+.p-pagetop .pageimg {
+  background-image: url("/images/shop.png");
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
   position: relative;
 }
-.c-tophead .archiveimg .archiveimg__shade {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.c-tophead__wrapper {
-  height: 230px;
+.p-pagetop__wrapper {
+  height: 220px;
   display: block;
   margin-top: -1rem;
 }
-.c-tophead__wrapper > p {
-  line-height: 230px;
-  color: #fff;
-  position: relative;
-  margin: auto 0;
-  margin-left: 25px;
+.p-pagetop__wrapper > h1 {
   font-size: 3.6rem;
   font-family: "M+1";
   font-weight: bold;
-}
-.c-tophead__wrapper .lower-p {
-  line-height: 3rem;
-  padding-top: 100px;
-}
-.c-tophead__wrapper .lower-p > small {
-  font-size: 1.6rem;
+  padding: 10rem 0 0 3rem;
 }
 @media screen and (min-width: 560px) {
-  .c-tophead__wrapper {
-    height: 280px;
-    margin-top: -1rem;
+  .p-pagetop {
+    height: 50rem;
+  }
+  .p-pagetop__wrapper {
+    height: 50rem;
+  }
+  .p-pagetop__wrapper > h1 {
+    line-height: 50rem;
+    padding: 0;
+    padding: auto 0;
+    padding-left: 8rem;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .c-tophead {
+  .p-pagetop {
     height: 50rem;
   }
-  .c-tophead__wrapper {
+  .p-pagetop__wrapper {
     height: 50rem;
     margin-top: -1rem;
   }
-  .c-tophead__wrapper > p {
+  .p-pagetop__wrapper > p {
     line-height: 50rem;
     display: inherit;
     font-size: 4rem;
     margin: auto 0;
     margin-left: 86px;
+  }
+}
+
+.p-single {
+  background-color: #fff;
+}
+.p-single__wrapper {
+  margin: 0 2rem;
+}
+.p-single__intro > h1 {
+  color: #3C2A10;
+  font-size: 2.8rem;
+  font-family: "M+1";
+  font-weight: bold;
+}
+.p-single__intro > h2 {
+  font-size: 2.8rem;
+  padding-top: 3rem;
+}
+.p-single__intro > h3 {
+  font-size: 2.4rem;
+  padding-top: 3rem;
+}
+.p-single__intro > h4,
+.p-single__intro > h5,
+.p-single__intro > h6 {
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+.p-single__intro > p {
+  font-size: 1.6rem;
+  padding-top: 3rem;
+}
+.p-single__brockquote {
+  margin-top: 3rem;
+  background-color: #F5F5F5;
+  padding: 3rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.p-single__brockquote .inner {
+  margin-top: 6rem;
+}
+.p-single__brockquote .inner > a {
+  position: relative;
+  padding-left: 6rem;
+  margin: 6rem 0;
+}
+.p-single__brockquote .inner > a::before {
+  content: "出典元：";
+  color: #3C2A10;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.p-single__brockquote > figcaption {
+  white-space: nowrap;
+}
+.p-single .bold {
+  font-weight: bold;
+}
+@media screen and (min-width: 560px) {
+  .p-single__wrapper {
+    margin: 6rem;
   }
 }
 
@@ -809,6 +943,62 @@ header .l-header__search::before {
   .u-pagenation > ul {
     display: contents;
   }
+}
+
+.u-list {
+  font-size: 1.6rem;
+  font-family: "M+1";
+  font-weight: 400;
+  padding-left: 2rem;
+}
+.u-list__1 {
+  list-style-type: decimal;
+  margin: 3rem 0;
+}
+.u-list__1 > ul {
+  list-style-type: decimal;
+  margin: 2rem 0;
+}
+.u-list__2 {
+  list-style: none;
+  margin: 3rem 0;
+}
+.u-list__2 > ul {
+  list-style: none;
+  margin: 2rem 0;
+}
+.u-list__lower {
+  padding-left: 1rem;
+}
+
+/*Code**/
+.u-code {
+  width: 100%;
+  display: inline-block;
+  background-color: #F5F5F5;
+  font-size: 1.6rem;
+  color: #3C2A10;
+  font-weight: 400;
+}
+
+/*table area**/
+.u-table {
+  border-collapse: collapse;
+  margin-top: 3rem;
+}
+.u-table > tbody > tr > th {
+  height: 7rem;
+  width: 33.3333333333vw;
+  border: solid 1px #707070;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.u-table > tbody > tr > td {
+  width: 66.6666666667vw;
+  border: solid 1px #707070;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-left: 2rem;
 }
 
 /**Foundation*/

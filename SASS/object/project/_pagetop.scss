@@ -1,62 +1,47 @@
-.c-tophead {
-    height: 230px;
+.p-pagetop {
+    height: 220px;
 
-    .frontimg {
-        background-image: url("/images/tophead_full.png");
+    .singleimg {
+        background-image: url("/images/cheeseburger.png");
         background-size: cover;
         background-attachment: scroll;
     }
 
-    .archiveimg {
-        background-image: url("/images/takeout.png");
+    .pageimg {
+        background-image: url("/images/shop.png");
         background-position: center;
         background-size: cover;
         background-attachment: scroll;
         position: relative;
-
-        .archiveimg__shade {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
     }
 
     &__wrapper {
-        height: 230px;
+        height: 220px;
         display: block;
         margin-top: -1rem;
 
-        >p {
-            line-height: 230px;
-            color: #fff;
-            position: relative;
-            margin: auto 0;
-            margin-left: 25px;
+        >h1 {
             font-size: 3.6rem;
             font-family: "M+1";
             font-weight: bold;
-        }
-
-        .lower-p {
-            line-height: 3rem;
-            padding-top: 100px;
-
-            >small {
-                font-size: 1.6rem;
-            }
+            padding: 10rem 0 0 3rem;
         }
 
     }
 
     @media screen and(min-width:560px) {
+        height: 50rem;
 
         &__wrapper {
-            height: 280px;
-            margin-top: -1rem;
+            height: 50rem;
 
+            >h1 {
+                line-height: 50rem;
+                padding: 0;
+                padding: auto 0;
+                padding-left: 8rem;
+                font-size: 6rem;
+            }
         }
     }
 
