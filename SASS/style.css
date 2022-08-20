@@ -772,6 +772,15 @@ header .l-header__search::before {
 .p-archivetop__wrapper > p > small {
   font-size: 1.6rem;
 }
+@media screen and (min-width: 560px) {
+  .p-archivetop__wrapper > p {
+    display: flex;
+  }
+  .p-archivetop__wrapper > p > small {
+    height: 3.6rem;
+    padding: 0.5rem 2rem;
+  }
+}
 
 .p-pagetop {
   height: 220px;

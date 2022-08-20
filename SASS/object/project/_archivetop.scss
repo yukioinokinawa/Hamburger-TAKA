@@ -34,6 +34,19 @@
             }
         }
 
+        @media screen and(min-width:560px) {
+
+            >p {
+                display: flex;
+
+                >small {
+                    height: 3.6rem;
+                    padding: 0.5rem 2rem;
+                }
+            }
+
+        }
+
     }
 
 }
